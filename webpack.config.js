@@ -14,5 +14,13 @@ module.exports = {
             title: '小k',
             template: 'src/assets/index.html'
         })],
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
+            },
+        ],
+    },
 
 };

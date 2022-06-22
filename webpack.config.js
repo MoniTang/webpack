@@ -9,6 +9,10 @@ module.exports = {
         //根据内容产生一个hash,内容变了会得到一个新的文件
         filename: '[name].[contenthash].js'
     },
+    devtool: 'inline-source-map',
+    devServer: {
+        contentBase: './dist',
+    },
     plugins: [new HtmlWebpackPlugin(
         {
             title: '小k',

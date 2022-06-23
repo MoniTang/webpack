@@ -13,7 +13,13 @@ module.exports = {
         }),
     ],
     module: {
+
+
         rules: [
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/,
+                use: ["file-loader"]
+            },
             {
                 test: /\.styl$/,
                 loader: ['style-loader', 'css-loader', 'stylus-loader']
